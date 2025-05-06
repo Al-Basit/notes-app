@@ -1,0 +1,839 @@
+{
+  "welcome": "Welcome to our website!",
+  "pickDate": "Pick a date",
+  "notificationPage": {
+    "heading": "Push Notifications",
+    "description": "Select users and send them notificaitons",
+    "formFields": {
+      "title": {
+        "label": "Title",
+        "placeholder": "Title"
+      },
+      "description": {
+        "label": "Description",
+        "placeholder": "Description"
+      },
+      "users": {
+        "label": "Users",
+        "placeholder": "Select Users"
+      },
+      "submitButton": "Send Notifications"
+    }
+  },
+ 
+  "settingsPage": [
+    {
+      "Title": "Settings"
+    },
+    {
+      "heading": "Prefixes",
+      "description": "Configuration of custom prefixes for batch numbers and product codes.",
+      "formFields": {
+        "prefix": {
+          "label": "Prefix",
+          "placeholder": "BAT"
+        },
+        "startingNumber": {
+          "label": "Starting Number",
+          "placeholder": "0"
+        },
+        "format": {
+          "label": "Format",
+          "placeholder": "Prefix-Timestamp"
+        }
+      }
+    },
+    {
+      "heading": "Country/Region",
+      "description": "Localization Settings",
+      "formFields": {
+        "language": {
+          "label": "Language",
+          "placeholder": "English"
+        },
+        "currency": {
+          "label": "Currency",
+          "placeholder": "PKR"
+        }
+      }
+    },
+    {
+      "heading": "Taxes",
+      "description": "Tax Settings",
+      "formFields": {
+        "SalesTaxRate": {
+          "label": "Sales Tax Rate",
+          "placeholder": "0"
+        },
+        "VATRate": {
+          "label": "VAT Rate",
+          "placeholder": "0"
+        },
+        "TaxInclusiveRates": "Tax Inclusive Rates"
+      }
+    },
+    {
+      "heading": "Notifications",
+      "description": "Manage Notifications Throughout The App",
+      "formFields": {
+        "EnableLowStockAlerts": "Enable Low Stock Alerts",
+        "EnableExpiringBatchAlerts": "Enable Expiring Batch Alerts"
+      }
+    },
+    {
+      "heading": "Features",
+      "description": "Manage Features Throughout The App",
+        "formFields": {
+          "announcements": "Enable Announcements",
+          "batches": "Enable Batches",
+          "categories": "Enable Categories",
+          "dashboard": "Enable Dashboard",
+          "logs": "Enable Logs",
+          "odometer": "Enable Odometer",
+          "products": "Enable Products"
+        }
+      
+    },
+    {
+      "button": "Save Changes"
+    }
+  ],
+  "usersPage": {
+    "Title": "All",
+    "heading": "Users",
+    "description": "Track all Users in the app",
+    "label": "Search",
+    "button": "Add User",
+    "import": {
+      "label": "Import",
+      "heading": "Import user with Excel File.",
+      "samplefile": "Sample File",
+      "upload": "Upload Excel/CSV File",
+      "filetoupload": "File to Upload:",
+      "processfile": "Process File"
+    },
+    "table": {
+      "Name": "Name",
+      "Email": "Email",
+      "Createdat":"Created at",
+      "IsVerified": "Is Verified",
+      "IsActive": "Is Active",
+      "Role": "Role",
+      "Actions": "Actions"
+    },
+    "AddUser": {
+      "heading": "Add A New User",
+      "description": "Create A New User",
+      "edit": "Edit User",
+      "formFields": {
+        "FirstName": {
+          "label": "First Name",
+          "placeholder": "First Name"
+        },
+        "LastName": {
+          "label": "Last Name",
+          "placeholder": "Last Name"
+        },
+        "Email": {
+          "label": "Email",
+          "placeholder": "Email"
+        },
+        "Password": {
+          "label": "Password",
+          "placeholder": "Password"
+        },
+        "Role": "Role"
+      },
+      "createbutton": "Create User",
+      "updatebutton": "Update User"
+    }
+  },
+  "customerPage": {
+    "Title": "All",
+    "heading": "Customers",
+    "description": "Track all customers in the app",
+    "label": "Search",
+    "button": "Add Customer",
+    "table": {
+      "Name": "Name",
+      "Email": "Email",
+      "Createdat":"Created at",
+      "IsVerified": "Is Verified",
+      "IsActive": "Is Active",
+      "Role": "Role",
+      "Address": "Address"
+    },
+    "AddUser": {
+      "heading": "Add A New Customer",
+      "description": "Create A New Customer",
+      "edit": "Edit Customer",
+      "formFields": {
+        "FirstName": {
+          "label": "First Name",
+          "placeholder": "First Name"
+        },
+        "LastName": {
+          "label": "Last Name",
+          "placeholder": "Last Name"
+        },
+        "Email": {
+          "label": "Email",
+          "placeholder": "Email"
+        },
+        "Password": {
+          "label": "Password",
+          "placeholder": "Password"
+        },
+        "Phone": {
+          "label": "Phone",
+          "placeholder": "Phone"
+        },
+        "Address": {
+          "label": "Address",
+          "placeholder": "Address"
+        },
+        "Country": {
+          "label": "Country",
+          "placeholder": "Country"
+        },
+        "City": {
+          "label": "City",
+          "placeholder": "City"
+        },
+        "Role": "Role"
+      },
+      "createbutton": "Create Customer",
+      "updatebutton": "Update Customer"
+    }
+  },
+
+  "distributorPage": {
+    "Title": "All",
+    "heading": "Distributors",
+    "description": "Track all Distributors in the app",
+    "label": "Search",
+    "button": "Add Distributor",
+    "import": {
+      "label": "Import",
+      "heading": "Import distributor with Excel File.",
+      "samplefile": "Sample File",
+      "upload": "Upload Excel/CSV File",
+      "filetoupload": "File to Upload:",
+      "processfile": "Process File"
+    },
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "contactNumber": "Contact Number",
+      "ntn": "NTN",
+      "actions":"Actions"
+    },
+    "AddUser": {
+      "heading": "Add A New Distributor",
+      "description": "Create A New Distributor",
+      "edit": "Edit Distributor",
+      "formFields": {
+        "FirstName": {
+          "label": "First Name",
+          "placeholder": "First Name"
+        },
+        "LastName": {
+          "label": "Last Name",
+          "placeholder": "Last Name"
+        },
+        "Email": {
+          "label": "Email",
+          "placeholder": "Email"
+        },
+        "Password": {
+          "label": "Password",
+          "placeholder": "Password"
+        },
+        "Role": "Role"
+      },
+      "createbutton": "Create Distributor",
+      "updatebutton": "Update Distributor"
+    }
+  },
+  "announcementsPage": {
+    "Title": "All",
+    "heading": "Announcements",
+    "description": "View All Announcements",
+    "button": "Create Announcements",
+    "table": {
+      "Heading": "Heading",
+      "Description": "Description",
+      "Type": "Type",
+      "IsArchived": "Is Archived",
+      "Createdat":"Created at",
+      "StartDate": "StartDate",
+      "EndDate": "EndDate",
+      "Actions": "Actions"
+    },
+    "announcementform": {
+      "update": "Update Announcement",
+      "create": "Create Announcement",
+      "formFields": {
+        "Title": {
+          "label": "Title",
+          "placeholder": "Title"
+        },
+        "Description": {
+          "label": "Description",
+          "placeholder": "Description"
+        },
+        "Attachement": {
+          "label": "Attachement",
+          "placeholder": "Attachement"
+        },
+        "StartDate": {
+          "label": "Start Date",
+          "placeholder": "Start Date"
+        },
+        "EndDate": {
+          "label": "End Date",
+          "placeholder": "End Date"
+        }
+      },
+      "button": "Save Changes"
+    }
+  },
+  "logsPage": {
+    "tab1": {
+      "heading": "Activity Logs",
+      "table": {
+        "User": "User",
+        "Email": "Email",
+        "Timestamp": "Timestamp",
+        "Activity": "Activity"
+      },
+      "nologs": "  No Logs Found"
+    },
+    "tab2": {
+      "heading": "Verification Logs",
+      "table": {
+        "User": "User",
+        "Email": "Email",
+        "IPAddress": "IP Address",
+        "Geolocation": "Geolocation",
+        "VerificationAttempTime": "Verification Attemp Time",
+        "IsSuccessful": "Is Successful?"
+      },
+      "nologs": "  No Logs Found"
+    }
+  },
+  "batchPage": {
+    "viewBatch": {
+      "all": "All",
+      "export": "Export",
+      "addbatch": "Add Batch",
+      "heading": "Batches",
+      "description": "Track all batches.",
+      "search": "Search",
+      "table": {
+        "Code": "Code",
+        "BatchName": "Batch Name",
+        "Status": "Status",
+        "Createdat":"Created at",
+        "Volume": "Volume",
+        "StartDate": "Start Date",
+        "EndDate": "End Date",
+        "ExpiryDate": "Expiry Date",
+        "Actions": "Actions"
+      },
+      "nobatchfound": "No Batch Found",
+      "togglemenu": "Toggle menu",
+      "view": "View"
+    },
+    "createBatch": {
+      "title": "Create A New Batch",
+      "discard": "Discard",
+      "savebatch": "Save Batch",
+      "batchDetails": {
+        "heading": "Batch Details",
+        "formFields": {
+          "Code": {
+            "label": "Code",
+            "placeholder": "Batch Code"
+          },
+          "Name": {
+            "label": "Name",
+            "placeholder": "Batch Name"
+          },
+          "Description": {
+            "label": "Description",
+            "placeholder": "Please enter a description for this batch."
+          },
+          "StartDate": {
+            "label": "StartDate",
+            "placeholder": "StartDate"
+          },
+          "EndDate": {
+            "label": "EndDate",
+            "placeholder": "EndDate"
+          },
+          "Expiry": {
+            "label": "Expiry",
+            "placeholder": "Expiry"
+          }
+        }
+      },
+      "codeGeneration": {
+        "heading": "Code Generation",
+        "description": "Select which codes to generate againts each batch-item.",
+        "qrcode": "QR Code",
+        "datamatrix": "Data Matrix"
+      },
+      "products": {
+        "heading": "Products",
+        "description": "Select Products And Their Quantities",
+        "product": "Product",
+        "quantity": "Quantity",
+        "actions": "Actions",
+        "selectproduct": "Select Product",
+        "addproduct": "Add Product"
+      }
+    }
+  },
+  "category": {
+    "heading": "Categories",
+    "addnewcategory": {
+      "heading": "Add New Category",
+      "label": "Category Name",
+      "placeholder": "Enter category name",
+      "addcategory": "Add Category",
+      "adding": "Adding..."
+    },
+    "addnewsubcategory": {
+      "heading": "Add New Sub-Category",
+      "formFields": {
+        "CategoryName": {
+          "label": "Category Name",
+          "placeholder": "Enter category name"
+        },
+        "ParentCategory": {
+          "label": "Parent Category",
+          "placeholder": "Select parent category"
+        }
+      },
+      "addsubcategory": "Add Sub Category",
+      "adding": "Adding..."
+    }
+  },
+
+    "complaintsPage": {
+      "all": "All",
+      "heading": "Complaint Tickets",
+      "description": "View all complaints",
+      "search": "Search",
+      "label": "Search",
+      "button": "Add Ticket",
+      "complaintList":"Tickets List",
+      "table": {
+        "name": "Subject",
+        "Createdby": "Created by",
+        "status": "Status",
+        "createdAt": "Created at"
+      },
+      "addComplaint": {
+        "addComplaint": "Add Ticket",
+        "editComplaint": "Edit Ticket",
+        "discard": "Cancel",
+        "savecomplaint": "Update Ticket",
+        "back": "Back",
+        "complaint": "Ticket",
+        "edit": "Edit",
+        "add": "Add",
+        "complaintDetails": "Ticket Details",
+        "fillComplaintInfo": "Fill in the ticket information below.",
+        "generalInformation": "General Information",
+        "assignmentDetails": "Assignment Details",
+        "complaintClassification": "Ticket Classification",
+        "subject": "Subject",
+        "subjectPlaceholder": "Enter the subject of the ticket",
+        "reference": "Reference",
+        "referencePlaceholder": "Enter the reference number",
+        "description": "Description",
+        "descriptionPlaceholder": "Enter the description of the ticket",
+        "customerId": "Customer ID",
+        "assignedTo": "Assigned To",
+        "selectCustomer": "Select Customer",
+        "selectCustomerPlaceholder": "Select customer",
+        "searchCustomerPlaceholder": "Search customer...",
+        "noCustomersFound": "No customer found",
+        "assignedAdmin": "Assigned Admin",
+        "selectAdminPlaceholder": "Select admin",
+        "searchAdminPlaceholder": "Search admin...",
+        "type": "Type",
+        "priority": "Priority",
+        "selectType": "Select Type",
+        "selectPriority": "Select Priority",
+        "billing": "Billing",
+        "technicalSupport": "Technical Support",
+        "order": "Order Issue",
+        "product": "Product Issue",
+        "shipment": "Shipment Issue",
+        "payment": "Payment Issue",
+        "generalService": "General Service",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "critical": "Critical",
+        "complaintCreatedSuccessfully": "Ticket created successfully",
+        "complaintUpdatedSuccessfully": "Ticket updated successfully",
+        "cancel": "Cancel",
+        "submitting": "Submitting...",
+        "updateComplaint": "Update Ticket",
+        "submitComplaint": "Submit Ticket"
+      }
+    },
+  "productsPage": {
+    "all": "All",
+    "dropdown": {
+      "status": "Status",
+      "all": "All",
+      "active": "Active",
+      "inactive": "InActive"
+    },
+    "import": {
+      "label": "Import",
+      "heading": "Import product with Excel File.",
+      "samplefile": "Sample File",
+      "upload": "Upload Excel/CSV File",
+      "filetoupload": "File to Upload:",
+      "processfile": "Process File"
+    },
+    "export": "Export",
+    "addproduct": "Add Product",
+    "heading": "Products",
+    "description": "View all added products.",
+    "search": "Search",
+    "table": {
+      "Image": "Image",
+      "ProductName": "ProductName",
+      "Status": "Status",
+      "EAN13Code": "EAN13 Code",
+      "Price": "Price",
+      "Createdat": "Created at",
+      "Actions": "Actions",
+      "noproductsfound": "No Products Found"
+    },
+    "togglemenu": {
+      "label": "Toggle menu ",
+      "actions": "Actions",
+      "edit": "Edit",
+      "delete": "Delete",
+      "areyousure": "Are you sure?",
+      "permanentlydelete": "This action cannot be undone. This will  permanently delete the product.",
+      "cancel": "Cancel"
+    },
+    "addProduct": {
+      "heading": "Add Product",
+      "discard": "Discard",
+      "saveproduct": "Save Product",
+      "uploadImage": "Upload Image",
+      "removeImage": "Remove Image",
+      "uploadImages": "Upload Images",
+      "back": "Back",
+      "product": "Product",
+      "edit": "Edit",
+      "add": "Add",
+      "productdetails": "Product Details",
+      "ProductDetails": {
+        "heading": "Product Details",
+        "formFields": {
+          "Name": {
+            "label": "Name",
+            "placeholder": "Product Name"
+          },
+          "Description": {
+            "label": "Description",
+            "placeholder": "A short product description"
+          },
+          "ProductImage": {
+            "label": "Product Image",
+            "placeholder": "Upload Product Image"
+          },
+          "CountryCode": {
+            "label": "Country Code",
+            "placeholder": "Country Code"
+          },
+          "ManufacturerCode": {
+            "label": "Manufacturer Code",
+            "placeholder": "Manufacturer Code"
+          },
+          "ProductCode": {
+            "label": "Product Code",
+            "placeholder": "Product Code"
+          }
+        }
+      },
+      "Stock": {
+        "label": "Stock",
+        "description": "Price of the product",
+        "SKU": "SKU",
+        "price": "Price"
+      },
+      "ProductCategory": {
+        "label": "Product Category",
+        "placeholder": "Select Category",
+        "searchcategory": "Search Category...",
+        "noproductfound": "No product found."
+      }
+    }
+  },
+  "suppliersPage": {
+    "Title": "Suppliers",
+    "heading": "Suppliers",
+    "description": "View all suppliers.",
+    "label": "Search",
+    "button": "Add Supplier",
+    "import": {
+      "label": "Import",
+      "heading": "Import supplier with Excel File.",
+      "samplefile": "Sample File",
+      "upload": "Upload Excel/CSV File",
+      "filetoupload": "File to Upload:",
+      "processfile": "Process File"
+    },
+    "table": {
+      "Name": "Name",
+      "Email": "Email",
+      "Phone": "Phone",
+      "Address": "Address",
+      "Rating": "Rating",
+      "TIN": "TIN",
+      "IsActive": "Is Active",
+      "Actions": "Actions"
+    },
+    "viewProfile": "View Supplier Profile",
+    "editSupplier": "Edit Supplier"
+  },
+
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "limit": "Limit:"
+  },
+  "dashboardPage": {
+    "totalbatches": "Total Batches",
+    "totalproducts": "Total Products",
+    "totalva": "Total Verified Attempts",
+    "totalqrgeneration": "Total QR Code Generation",
+    "totalbatchesandproducts": "Total Batches and Products",
+    "totalcomplaints": "Total Complaints",
+    "description": "Monthly product count",
+    "descriptioncomplaint": "Monthly ticket count",
+    "fromlastmonth": "from last month "
+  },
+  "warehousePage": {
+    "all": "All",
+    "export": "Export",
+    "addwarehouse": "Add Warehouse",
+    "heading": "Add Warehouse",
+    "description": "Track warehouses",
+    "search": "Search",
+    "table": {
+      "Name": "Name",
+      "Address": "Address",
+      "Createdat":"Created at",
+      "City": "City",
+      "State": "State",
+      "Country": "Country",
+      "isActive": "isActive",
+      "Capacity": "Capacity",
+      "Area":"Area",
+      "PostalCode":"Postal Code",
+      "Actions": "Actions",
+      "View": "View",
+      "ManageInventory": "Manage Inventory",
+      "Edit": "Edit",
+      "Delete": "Delete"
+    },
+    "addWarehouse": {
+      "title": "Create A New Warehouse",
+      "discard": "Discard",
+      "save": "Save Warehouse",
+      "heading": "Warehouse Details",
+      "formFields": {
+        "Name": {
+          "label": "Name",
+          "placeholder": "Warehouse Name"
+        },
+        "Address": {
+          "label": "Address",
+          "placeholder": "Warehouse Address"
+        },
+        "City": {
+          "label": "City",
+          "placeholder": "City Name"
+        },
+        "StreetAddress": {
+          "label": "Street Address",
+          "placeholder": "Street Address"
+        },
+        "State": {
+          "label": "State",
+          "placeholder": "State Name"
+        },
+        "Country": {
+          "label": "Country",
+          "placeholder": "Country Name"
+        },
+        "Capacity": {
+          "label": "Capacity ",
+          "placeholder": "Warehouse Capacity"
+        },
+        "Area": {
+          "label": "Area ",
+          "placeholder": "Area"
+        },
+        "PostalCode": {
+          "label": "Postal Code ",
+          "placeholder": "Postal Code"
+        },
+        "OperatingUnit": {
+          "label": "Operating Unit",
+          "placeholder": "Warehouse Operating Unit"
+        },
+        "OperatingRegion": {
+          "label": "Operating Region",
+          "placeholder": "Warehouse Operating Region"
+        }
+      }
+    },
+    "transferInventory": {
+      "swarehouses": {
+        "title": "Select Warehouses",
+        "description": "Choose source and destination",
+        "heading": "Warehouse Transfer",
+        "notes": "Transfer inventory between warehouses by selecting source and destination locations",
+        "slabel": "Source Warehouse",
+        "dlabel": "Destination Warehouse",
+        "splaceholder": "Select source warehouse",
+        "dplaceholder": "Select destination warehouse",
+        "snote": "Select the warehouse to transfer from",
+        "dnote": "Select the warehouse to transfer to",
+        "button": "Proceed with Transfer"
+      },
+      "sproduct": {
+        "title": "Select Products",
+        "description": "Choose items to transfer",
+        "heading": "Items to Transfer",
+        "notes": "Specify the quantity for each item you want to transfer",
+        "image": "Image",
+        "pname": "Product Name",
+        "available": "Available",
+        "quantity": "Tranfer Quantity",
+        "button": "Transfer Items"
+      },
+      "review": {
+        "title": "Review",
+        "description": "Confirm transfer details",
+        "summary": "Transfer Summary",
+        "sitems": "Selected Items",
+        "ctransfer": "Confirm Transfer",
+        "From": "From",
+        "To": "To",
+        "itemsSelect": "items selected",
+        "Qty":"Qty"
+      }
+    },
+    "manageInventory": {
+      "title": "Warehouse Inventory Manager",
+      "heading": "Add to Inventory ",
+      "search": "Search Products...",
+      "quantity": "Quantity",
+      "add": "Add",
+      "currentinventory": "Current Inventory",
+      "noitems": "  No items in inventory",
+      "table": {
+        "Product": "Product",
+        "Quantity": "Quantity",
+        "RemoveProduct": "Remove Product"
+      },
+      "save": "Save"
+    }
+  },
+  "sideBar": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "vproducts": "View Products",
+    "pcategories": "Product Categories",
+    "batch": "Batch",
+    "warehouse": "Warehouse",
+    "vwarehouse": "View Warehouse",
+    "transferinventory": "Transfer Inventory",
+    "sales": "Sales",
+    "salesplan": "View Plans",
+    "createplan": "Create Plan",
+    "leads": "Leads",
+    "createlead": "Create A Lead",
+    "mleads": "Manage Leads",
+    "distributorProfile": "Distributor Profile",
+    "distributors": "Distributors",
+    "supplier": "Suppliers",
+    "onboarding": "Onboarding",
+    "createSale": "Create Sale",
+    "orders": "Orders",
+    "logs": "Logs",
+    "updates": "Updates",
+    "announcements": "Announcements",
+    "notifications": "Notifications",
+    "usermanagement": "User Management",
+    "customers": "Customers",
+    "users": "Users",
+    "complaint":"Complaint Tickets",
+    "createcomplaint":"Create Ticket",
+    "viewcomplaint":"View Tickets",
+    "attendance": "Attendance",
+    "settings": "Settings",
+    "signout": "Sign Out"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "productsView": "View Products",
+    "productsAdd": "Product",
+    "batchView": "View Batches",
+    "batchDetails": "Batch Details",
+    "batchAdd": "Add Batch",
+    "warehouseView": "View Warehouses",
+    "warehouseAdd": "Add Warehouse",
+    "inventory": "Inventory",
+    "categoriesView": "Categories",
+    "logs": "Activity Logs",
+    "usersView": "View Users",
+    "announcements": "View Announcements",
+    "notifications": "Notifications",
+    "settings": "Settings"
+  },
+  "ordersPage": {
+    "all": "All",
+    "heading": "Orders",
+    "search": "Search",
+    "noorderfound": "No Order Found",
+    "limit": "Limit:",
+    "table": {
+      "totalPrice": "Total Price",
+      "quantity": "Quantity",
+      "createdAt": "CreatedAt",
+      "actions": "Actions"
+    }
+  },
+  "salesJourneyPlan": {
+    "heading": "Sales Journey Plans",
+    "createPlanButton": "Create Plan",
+    "table": {
+      "name": "Name",
+      "description": "Description",
+      "createdAt": "Created at",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "salesPerson": "Sales Person",
+      "isActive": "Is Active",
+      "actions": "Actions"
+    },
+    "noData": "No data found"
+  }
+}

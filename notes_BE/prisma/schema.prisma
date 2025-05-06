@@ -1,0 +1,153 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String  @id @default(uuid())
+  full_name     String?
+  email         String? @unique
+  phone         String  @unique
+  password_hash String?
+  role          Role    @default(CLIENT)
+  image_url     String?
+
+  // Original relation
+  password_resets PasswordResetToken[]
+
+  // New relations for notes functionality
+  authored_notes Note[] @relation("NoteAuthor")
+  shared_notes   NoteUser[]
+  note_versions  NoteVersion[] @relation("NoteVersionCreator")
+  notifications  Notification[]
+}
+
+enum Role {
+  ADMIN
+  USER
+}
+
+model Note {
+  id          String   @id @default(uuid())
+  title       String
+  content     String
+  visibility  Visibility @default(PRIVATE)
+  is_archived Boolean  @default(false)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+
+  // Relations
+  author      User     @relation("NoteAuthor", fields: [author_id], references: [id])
+  author_id   String
+  tags        Tag[]
+  versions    NoteVersion[]
+  shared_with NoteUser[]
+  attachments Attachment[]
+  notifications Notification[] @relation("NoteNotifications")
+}
+
+model NoteVersion {
+  id          String   @id @default(uuid())
+  title       String
+  content     String
+  created_at  DateTime @default(now())
+
+  // Relations
+  note        Note     @relation(fields: [note_id], references: [id])
+  note_id     String
+  created_by  User     @relation("NoteVersionCreator", fields: [user_id], references: [id])
+  user_id     String
+
+  @@map("note_versions")
+}
+
+model NoteUser {
+  id         String   @id @default(uuid())
+  can_edit   Boolean  @default(false)
+  created_at DateTime @default(now())
+
+  // Relations
+  note       Note     @relation(fields: [note_id], references: [id])
+  note_id    String
+  user       User     @relation(fields: [user_id], references: [id])
+  user_id    String
+
+  @@unique([note_id, user_id])
+  @@map("note_users")
+}
+
+model Tag {
+  id         String   @id @default(uuid())
+  name       String
+  created_at DateTime @default(now())
+
+  // Relations
+  notes      Note[]
+
+  @@map("tags")
+}
+
+model Attachment {
+  id         String   @id @default(uuid())
+  url        String
+  name       String
+  type       String
+  size       Int
+  created_at DateTime @default(now())
+
+  // Relations
+  note       Note     @relation(fields: [note_id], references: [id])
+  note_id    String
+
+  @@map("attachments")
+}
+
+model Notification {
+  id          String     @id @default(uuid())
+  message     String
+  is_read     Boolean    @default(false)
+  type        NotificationType
+  created_at  DateTime   @default(now())
+
+  // Relations
+  user        User       @relation(fields: [user_id], references: [id])
+  user_id     String
+  note        Note?      @relation("NoteNotifications", fields: [note_id], references: [id])
+  note_id     String?
+
+  @@map("notifications")
+}
+
+model PasswordResetToken {
+  id         String   @id @default(uuid())
+  created_at DateTime @default(now())
+  user       User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  user_id    String
+
+  @@map("password_reset_tokens")
+}
+
+model Image {
+  id  String @id @default(uuid())
+  url String
+
+  @@map("images")
+}
+
+enum Visibility {
+  PUBLIC
+  PRIVATE
+  LIMITED
+}
+
+enum NotificationType {
+  NOTE_CREATED
+  NOTE_UPDATED
+  NOTE_DELETED
+  VERSION_CREATED
+  SHARE_ADDED
+}

@@ -1,0 +1,663 @@
+{
+  "welcome": "مرحبًا بكم في موقعنا!",
+  "pickDate": "اختر تاريخًا",
+  "notificationPage": {
+    "heading": "الإشعارات الفورية",
+    "description": "حدد المستخدمين وأرسل لهم إشعارات",
+    "formFields": {
+      "title": {
+        "label": "العنوان",
+        "placeholder": "العنوان"
+      },
+      "description": {
+        "label": "الوصف",
+        "placeholder": "الوصف"
+      },
+      "users": {
+        "label": "المستخدمون",
+        "placeholder": "اختر المستخدمين"
+      },
+      "submitButton": "إرسال الإشعارات"
+    }
+  },
+  "pagination": {
+    "previous": "السابق",
+    "next": "التالي",
+    "limit": "الحد:"
+  },
+  "settingsPage": [
+    {
+      "Title": "إعدادات"
+    },
+    {
+      "heading": "البادئات",
+      "description": "تكوين بادئات مخصصة لأرقام الدفعات ورموز المنتجات.",
+      "formFields": {
+        "prefix": {
+          "label": "بادئة",
+          "placeholder": "BAT"
+        },
+        "startingNumber": {
+          "label": "رقم البدء",
+          "placeholder": "0"
+        },
+        "format": {
+          "label": "التنسيق",
+          "placeholder": "بادئة-طابع زمني"
+        }
+      }
+    },
+    {
+      "heading": "الدولة/المنطقة",
+      "description": "إعدادات التوطين",
+      "formFields": {
+        "language": {
+          "label": "اللغة",
+          "placeholder": "العربية"
+        },
+        "currency": {
+          "label": "العملة",
+          "placeholder": "PKR"
+        }
+      }
+    },
+    {
+      "heading": "الضرائب",
+      "description": "إعدادات الضرائب",
+      "formFields": {
+        "SalesTaxRate": {
+          "label": "نسبة ضريبة المبيعات",
+          "placeholder": "0"
+        },
+        "VATRate": {
+          "label": "نسبة ضريبة القيمة المضافة",
+          "placeholder": "0"
+        },
+        "TaxInclusiveRates": "نسب الضرائب الشاملة"
+      }
+    },
+    {
+      "heading": "الإشعارات",
+      "description": "إدارة الإشعارات في جميع أنحاء التطبيق",
+      "formFields": {
+        "EnableLowStockAlerts": "تفعيل تنبيهات المخزون المنخفض",
+        "EnableExpiringBatchAlerts": "تفعيل تنبيهات انتهاء صلاحية الدفعات"
+      }
+    },
+    {
+      "button": "حفظ التغييرات."
+    }
+  ],
+  "usersPage": {
+    "Title": "الكل",
+    "heading": "المستخدمون",
+    "description": "تتبع جميع المستخدمين في التطبيق",
+    "label": "بحث",
+    "button": "إضافة مستخدم",
+    "table": {
+      "Name": "الاسم",
+      "Email": "البريد الإلكتروني",
+      "Createdat": "تاريخ الإنشاء",
+      "IsVerified": "تم التحقق منه",
+      "IsActive": "نشط",
+      "Role": "الدور"
+    },
+    "AddUser": {
+      "heading": "إضافة مستخدم جديد",
+      "description": "إنشاء مستخدم جديد",
+      "edit": "تعديل المستخدم",
+      "formFields": {
+        "FirstName": {
+          "label": "الاسم الأول",
+          "placeholder": "الاسم الأول"
+        },
+        "LastName": {
+          "label": "اسم العائلة",
+          "placeholder": "اسم العائلة"
+        },
+        "Email": {
+          "label": "البريد الإلكتروني",
+          "placeholder": "البريد الإلكتروني"
+        },
+        "Password": {
+          "label": "كلمة المرور",
+          "placeholder": "كلمة المرور"
+        },
+        "Role": "الدور"
+      },
+      "createbutton": "إنشاء مستخدم",
+      "updatebutton": "تحديث المستخدم"
+    }
+  },
+
+  "customerPage": {
+    "Title": "الكل",
+    "heading": "العملاء",
+    "description": "تتبع جميع العملاء في التطبيق",
+    "label": "بحث",
+    "button": "إضافة عميل",
+    "table": {
+      "Name": "الاسم",
+      "Email": "البريد الإلكتروني",
+      "Createdat": "تاريخ الإنشاء",
+      "IsVerified": "تم التحقق",
+      "IsActive": "نشط",
+      "Role": "الدور",
+      "Address": "العنوان"
+    },
+    "AddUser": {
+      "heading": "إضافة عميل جديد",
+      "description": "إنشاء عميل جديد",
+      "edit": "تعديل العميل",
+      "formFields": {
+        "FirstName": {
+          "label": "الاسم الأول",
+          "placeholder": "الاسم الأول"
+        },
+        "LastName": {
+          "label": "اسم العائلة",
+          "placeholder": "اسم العائلة"
+        },
+        "Email": {
+          "label": "البريد الإلكتروني",
+          "placeholder": "البريد الإلكتروني"
+        },
+        "Password": {
+          "label": "كلمة المرور",
+          "placeholder": "كلمة المرور"
+        },
+        "Phone": {
+          "label": "الهاتف",
+          "placeholder": "رقم الهاتف"
+        },
+        "Address": {
+          "label": "العنوان",
+          "placeholder": "العنوان"
+        },
+        "Country": {
+          "label": "البلد",
+          "placeholder": "البلد"
+        },
+        "City": {
+          "label": "المدينة",
+          "placeholder": "المدينة"
+        },
+        "Role": "الدور"
+      },
+      "createbutton": "إنشاء عميل",
+      "updatebutton": "تحديث العميل"
+    }
+  },
+
+  "announcementsPage": {
+    "Title": "الكل",
+    "heading": "الإعلانات",
+    "description": "عرض جميع الإعلانات",
+    "button": "إنشاء إعلان",
+    "table": {
+      "Heading": "العنوان",
+      "Description": "الوصف",
+      "Type": "النوع",
+      "IsArchived": "محفوظ",
+      "Createdat": "تاريخ الإنشاء",
+      "StartDate": "تاريخ البدء",
+      "EndDate": "تاريخ الانتهاء",
+      "Actions": "الإجراءات"
+    },
+    "announcementform": {
+      "update": "تحديث الإعلان",
+      "create": "إنشاء إعلان",
+      "formFields": {
+        "Title": {
+          "label": "العنوان",
+          "placeholder": "العنوان"
+        },
+        "Description": {
+          "label": "الوصف",
+          "placeholder": "الوصف"
+        },
+        "Attachement": {
+          "label": "المرفق",
+          "placeholder": "المرفق"
+        },
+        "StartDate": {
+          "label": "تاريخ البدء",
+          "placeholder": "تاريخ البدء"
+        },
+        "EndDate": {
+          "label": "تاريخ الانتهاء",
+          "placeholder": "تاريخ الانتهاء"
+        }
+      },
+      "button": "حفظ التغييرات"
+    }
+  },
+  "logsPage": {
+    "tab1": {
+      "heading": "سجلات النشاط",
+      "table": {
+        "User": "المستخدم",
+        "Email": "البريد الإلكتروني",
+        "Timestamp": "تاريخ ووقت",
+        "Activity": "النشاط"
+      },
+      "nologs": "لا توجد سجلات"
+    },
+    "tab2": {
+      "heading": "سجلات التحقق",
+      "table": {
+        "User": "المستخدم",
+        "Email": "البريد الإلكتروني",
+        "IPAddress": "عنوان IP",
+        "Geolocation": "الموقع الجغرافي",
+        "VerificationAttempTime": "وقت محاولة التحقق",
+        "IsSuccessful": "هل كانت ناجحة؟"
+      },
+      "nologs": "لا توجد سجلات"
+    }
+  },
+  "batchPage": {
+    "viewBatch": {
+      "all": "الكل",
+      "export": "تصدير",
+      "addbatch": "إضافة دفعة",
+      "heading": "الدفعات",
+      "description": "تتبع جميع الدفعات.",
+      "search": "بحث",
+      "table": {
+        "Code": "الكود",
+        "BatchName": "اسم الدفعة",
+        "Status": "الحالة",
+        "Createdat": "تاريخ الإنشاء",
+        "Volume": "الحجم",
+        "StartDate": "تاريخ البدء",
+        "EndDate": "تاريخ الانتهاء",
+        "ExpiryDate": "تاريخ انتهاء الصلاحية",
+        "Actions": "الإجراءات"
+      },
+      "nobatchfound": "لا توجد دفعات",
+      "togglemenu": "تبديل القائمة",
+      "view": "عرض"
+    },
+    "createBatch": {
+      "title": "إنشاء دفعة جديدة",
+      "discard": "تجاهل",
+      "savebatch": "حفظ الدفعة",
+      "batchDetails": {
+        "heading": "تفاصيل الدفعة",
+        "formFields": {
+          "Code": {
+            "label": "الكود",
+            "placeholder": "كود الدفعة"
+          },
+          "Name": {
+            "label": "الاسم",
+            "placeholder": "اسم الدفعة"
+          },
+          "Description": {
+            "label": "الوصف",
+            "placeholder": "يرجى إدخال وصف لهذه الدفعة."
+          },
+          "StartDate": {
+            "label": "تاريخ البدء",
+            "placeholder": "تاريخ البدء"
+          },
+          "EndDate": {
+            "label": "تاريخ الانتهاء",
+            "placeholder": "تاريخ الانتهاء"
+          },
+          "Expiry": {
+            "label": "تاريخ انتهاء الصلاحية",
+            "placeholder": "تاريخ انتهاء الصلاحية"
+          }
+        }
+      },
+      "codeGeneration": {
+        "heading": "توليد الكود",
+        "description": "اختر أي الأكواد سيتم توليدها لكل عنصر من عناصر الدفعة.",
+        "qrcode": "رمز QR",
+        "datamatrix": "مصفوفة البيانات"
+      },
+      "products": {
+        "heading": "المنتجات",
+        "description": "اختر المنتجات وكمياتها",
+        "product": "المنتج",
+        "quantity": "الكمية",
+        "actions": "الإجراءات",
+        "selectproduct": "اختر المنتج",
+        "addproduct": "إضافة منتج"
+      }
+    }
+  },
+  "category": {
+    "heading": "الفئات",
+    "addnewcategory": {
+      "heading": "إضافة فئة جديدة",
+      "label": "اسم الفئة",
+      "placeholder": "أدخل اسم الفئة",
+      "addcategory": "إضافة فئة",
+      "adding": "جاري الإضافة..."
+    },
+    "addnewsubcategory": {
+      "heading": "إضافة فئة فرعية جديدة",
+      "formFields": {
+        "CategoryName": {
+          "label": "اسم الفئة",
+          "placeholder": "أدخل اسم الفئة"
+        },
+        "ParentCategory": {
+          "label": "الفئة الرئيسية",
+          "placeholder": "اختر الفئة الرئيسية"
+        }
+      },
+      "addsubcategory": "إضافة فئة فرعية",
+      "adding": "جاري الإضافة..."
+    }
+  },
+  "productsPage": {
+    "all": "الكل",
+    "dropdown": {
+      "status": "الحالة",
+      "all": "الكل",
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "import": {
+      "label": "استيراد",
+      "heading": "استيراد المنتج باستخدام ملف Excel.",
+      "samplefile": "ملف العينة",
+      "upload": "تحميل ملف Excel/CSV",
+      "filetoupload": "الملف المراد تحميله:",
+      "processfile": "معالجة الملف"
+    },
+    "export": "تصدير",
+    "addproduct": "إضافة منتج",
+    "heading": "المنتجات",
+    "description": "عرض جميع المنتجات المضافة.",
+    "search": "بحث",
+    "table": {
+      "Image": "الصورة",
+      "ProductName": "اسم المنتج",
+      "Status": "الحالة",
+      "EAN13Code": "رمز EAN13",
+      "Price": "السعر",
+      "Createdat": "تاريخ الإنشاء",
+      "Actions": "الإجراءات",
+      "noproductsfound": "لم يتم العثور على منتجات"
+    },
+    "togglemenu": {
+      "label": "تبديل القائمة",
+      "actions": "الإجراءات",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "areyousure": "هل أنت متأكد؟",
+      "permanentlydelete": "لا يمكن التراجع عن هذا الإجراء. سيتم حذف المنتج نهائيًا.",
+      "cancel": "إلغاء"
+    },
+    "addProduct": {
+      "heading": "إضافة منتج",
+      "discard": "تجاهل",
+      "saveproduct": "حفظ المنتج",
+      "uploadImage": "تحميل صورة",
+      "removeImage": "إزالة الصورة",
+      "uploadImages": "تحميل الصور",
+      "back": "رجوع",
+      "product": "منتج",
+      "edit": "تعديل",
+      "add": "إضافة",
+      "productdetails": "تفاصيل المنتج",
+      "ProductDetails": {
+        "heading": "تفاصيل المنتج",
+        "formFields": {
+          "Name": {
+            "label": "الاسم",
+            "placeholder": "اسم المنتج"
+          },
+          "Description": {
+            "label": "الوصف",
+            "placeholder": "وصف مختصر للمنتج"
+          },
+          "ProductImage": {
+            "label": "صورة المنتج",
+            "placeholder": "تحميل صورة المنتج"
+          },
+          "CountryCode": {
+            "label": "رمز الدولة",
+            "placeholder": "رمز الدولة"
+          },
+          "ManufacturerCode": {
+            "label": "رمز المُصنِّع",
+            "placeholder": "رمز المُصنِّع"
+          },
+          "ProductCode": {
+            "label": "رمز المنتج",
+            "placeholder": "رمز المنتج"
+          }
+        }
+      },
+      "Stock": {
+        "label": "المخزون",
+        "description": "سعر المنتج",
+        "SKU": "رمز SKU",
+        "price": "السعر"
+      },
+      "ProductCategory": {
+        "label": "فئة المنتج",
+        "placeholder": "اختر الفئة",
+        "searchcategory": "البحث عن فئة...",
+        "noproductfound": "لم يتم العثور على منتج."
+      }
+    }
+  },
+  "dashboardPage": {
+    "totalbatches": "إجمالي الدُفعات",
+    "totalproducts": "إجمالي المنتجات",
+    "totalva": "إجمالي المحاولات المُحققة",
+    "totalqrgeneration": "إجمالي توليد رموز QR",
+    "totalbatchesandproducts": "إجمالي الدُفعات والمنتجات",
+    "description": "عدد المنتجات الشهري",
+    "fromlastmonth": "منذ الشهر الماضي"
+  },
+  "warehousePage": {
+    "all": "الكل",
+    "export": "تصدير",
+    "addwarehouse": "إضافة مستودع",
+    "heading": "إضافة مستودعات",
+    "description": "تتبع جميع المستودعات",
+    "search": "بحث",
+    "table": {
+      "Name": "الاسم",
+      "Address": "العنوان",
+      "Createdat": "تاريخ الإنشاء",
+      "City": "المدينة",
+      "State": "الولاية",
+      "Country": "البلد",
+      "isActive": "نشط",
+      "Capacity": "السعة",
+      "Area":"المساحة",
+      "PostalCode":"الرمز البريدي",
+      "Actions": "الإجراءات",
+      "View": "عرض",
+      "ManageInventory": "إدارة المخزون"
+    },
+    "addWarehouse": {
+      "title": "إنشاء مستودع جديد",
+      "discard": "تجاهل",
+      "save": "حفظ المستودع",
+      "heading": "تفاصيل المستودع",
+      "formFields": {
+        "Name": {
+          "label": "الاسم",
+          "placeholder": "اسم المستودع"
+        },
+        "Address": {
+          "label": "العنوان",
+          "placeholder": "عنوان المستودع"
+        },
+        "City": {
+          "label": "المدينة",
+          "placeholder": "اسم المدينة"
+        },
+        "StreetAddress": {
+          "label": "عنوان الشارع",
+          "placeholder": "عنوان الشارع"
+        },
+        "Area": {
+          "label": "المساحة",
+          "placeholder": "مساحة المستودع"
+        },
+        "PostalCode": {
+          "label": "الرمز البريدي",
+          "placeholder": "الرمز البريدي للمستودع"
+        },
+        "State": {
+          "label": "الولاية",
+          "placeholder": "اسم الولاية"
+        },
+        "Country": {
+          "label": "البلد",
+          "placeholder": "اسم البلد"
+        },
+        "Capacity": {
+          "label": "السعة",
+          "placeholder": "سعة المستودع"
+        },
+        "OperatingUnit": {
+          "label": "الوحدة التشغيلية",
+          "placeholder": "الوحدة التشغيلية للمستودع"
+        },
+        "OperatingRegion": {
+          "label": "المنطقة التشغيلية",
+          "placeholder": "المنطقة التشغيلية للمستودع"
+        }
+      }
+    },
+    "transferInventory": {
+      "swarehouses": {
+        "title": "اختر المستودعات",
+        "description": "اختر المصدر والوجهة",
+        "heading": "نقل المستودعات",
+        "notes": "نقل المخزون بين المستودعات عن طريق اختيار مواقع المصدر والوجهة",
+        "slabel": "مستودع المصدر",
+        "dlabel": "مستودع الوجهة",
+        "splaceholder": "اختر مستودع المصدر",
+        "dplaceholder": "اختر مستودع الوجهة",
+        "snote": "اختر المستودع للنقل منه",
+        "dnote": "اختر المستودع للنقل إليه",
+        "button": "المتابعة بالنقل"
+      },
+      "sproduct": {
+        "title": "اختر المنتجات",
+        "description": "اختر العناصر للنقل",
+        "heading": "العناصر للنقل",
+        "notes": "حدد الكمية لكل عنصر تريد نقله",
+        "image": "الصورة",
+        "pname": "اسم المنتج",
+        "available": "المتوفر",
+        "quantity": "كمية النقل",
+        "button": "نقل العناصر"
+      },
+      "review": {
+        "title": "مراجعة",
+        "description": "تأكيد تفاصيل النقل",
+        "summary": "ملخص النقل",
+        "sitems": "العناصر المختارة",
+        "ctransfer": "تأكيد النقل",
+        "From": "من",
+        "To": "إلى",
+        "itemsSelect": "العناصر المحددة",
+        "Qty": "الكمية"
+      }
+    },
+    "manageInventory": {
+      "title": "إدارة مخزون المستودع",
+      "heading": "إضافة إلى المخزون",
+      "search": "بحث عن المنتجات...",
+      "quantity": "الكمية",
+      "add": "إضافة",
+      "currentinventory": "المخزون الحالي",
+      "noitems": "لا توجد عناصر في المخزون",
+      "table": {
+        "Product": "المنتج",
+        "Quantity": "الكمية",
+        "RemoveProduct": "إزالة المنتج"
+      },
+      "save": "حفظ"
+    }
+  },
+  "sideBar": {
+    "dashboard": "لوحة القيادة",
+    "products": "المنتجات",
+    "vproducts": "عرض المنتجات",
+    "pcategories": "فئات المنتجات",
+    "batch": "الدفعة",
+    "warehouse": "المستودع",
+    "vwarehouse": "عرض المستودع",
+    "transferinventory": "نقل المخزون",
+    "sales": "المبيعات",
+    "salesplan": "عرض الخطط",
+    "createplan": "إنشاء خطة",
+    "leads": "العملاء المحتملين",
+    "createlead": "إنشاء عميل محتمل",
+    "mleads": "إدارة العملاء المحتملين",
+    "distributor": "الموزع",
+    "onboarding": "الإعداد",
+    "orders": "الطلبات",
+    "logs": "السجلات",
+    "updates": "التحديثات",
+    "announcements": "الإعلانات",
+    "notifications": "الإشعارات",
+    "usermanagement": "إدارة المستخدمين",
+    "customers": "العملاء",
+    "users": "المستخدمون",
+    "attendance": "الحضور",
+    "settings": "الإعدادات",
+    "signout": "تسجيل الخروج"
+  },
+  "breadcrumb": {
+    "home": "الرئيسية",
+    "dashboard": "لوحة التحكم",
+    "productsView": "عرض المنتجات",
+    "productsAdd": "منتج",
+    "batchView": "عرض الدفعات",
+    "batchDetails": "تفاصيل الدفعة",
+    "batchAdd": "إضافة دفعة",
+    "warehouseView": "عرض المستودعات",
+    "warehouseAdd": "إضافة مستودع",
+    "inventory": "المخزون",
+    "categoriesView": "الفئات",
+    "logs": "سجلات النشاط",
+    "usersView": "عرض المستخدمين",
+    "announcements": "عرض الإعلانات",
+    "notifications": "الإشعارات",
+    "settings": "الإعدادات"
+  },
+  "ordersPage": {
+    "all": "الكل",
+    "heading": "الطلبات",
+    "search": "بحث",
+    "noorderfound": "لا توجد طلبات",
+    "limit": "الحد:",
+    "table": {
+      "totalPrice": "إجمالي السعر",
+      "quantity": "الكمية",
+      "createdAt": "تاريخ الإنشاء",
+      "actions": "الإجراءات"
+    }
+  },
+  "salesJourneyPlan": {
+    "heading": "خطط رحلة المبيعات",
+    "createPlanButton": "إنشاء خطة",
+    "table": {
+      "name": "الاسم",
+      "description": "الوصف",
+      "createdAt": "تاريخ الإنشاء",
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء",
+      "salesPerson": "مندوب المبيعات",
+      "actions": "الإجراءات"
+    },
+    "noData": "لا توجد بيانات"
+  }
+
+}
